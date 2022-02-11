@@ -1,5 +1,7 @@
-organization in ThisBuild := "com.example"
-version in ThisBuild := "1.0-SNAPSHOT"
+import jdk.nashorn.internal.runtime.Version.version
+
+//organization in ThisBuild := "com.example"
+//version in ThisBuild := "1.0-SNAPSHOT"
 
 // the Scala version that will be used for cross-compiled libraries
 scalaVersion in ThisBuild := "2.13.0"
@@ -21,9 +23,9 @@ lazy val `hello-world-impl` = (project in file("hello-world-impl"))
   .enablePlugins(LagomScala)
   .settings(
     libraryDependencies ++= Seq(
-      lagomScaladslPersistenceCassandra,
+    //  lagomScaladslPersistenceCassandra,
       lagomScaladslKafkaBroker,
-      lagomScaladslTestKit,
+      lagomScaladslTestKit
       macwire,
       scalaTest
     )
@@ -42,7 +44,7 @@ lazy val `hello-world-stream-impl` = (project in file("hello-world-stream-impl")
   .enablePlugins(LagomScala)
   .settings(
     libraryDependencies ++= Seq(
-      lagomScaladslTestKit,
+      lagomScaladslTestKit
       macwire,
       scalaTest
     )
