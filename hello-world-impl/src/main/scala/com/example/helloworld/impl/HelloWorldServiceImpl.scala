@@ -25,6 +25,7 @@ import com.lightbend.lagom.scaladsl.api.transport.BadRequest
  *   * Test Comment4
  *    * Test Comment5
  *    * Test Comment6
+ *    * Test Comment7
   */
 class HelloWorldServiceImpl(
   clusterSharding: ClusterSharding,
