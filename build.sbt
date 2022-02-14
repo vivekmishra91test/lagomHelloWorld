@@ -26,7 +26,7 @@ lazy val `hello-world-impl` = (project in file("hello-world-impl"))
     libraryDependencies ++= Seq(
     //  lagomScaladslPersistenceCassandra,
       lagomScaladslKafkaBroker,
-      lagomScaladslTestKit
+      lagomScaladslTestKit,
       macwire,
       scalaTest
     )
@@ -45,7 +45,7 @@ lazy val `hello-world-stream-impl` = (project in file("hello-world-stream-impl")
   .enablePlugins(LagomScala)
   .settings(
     libraryDependencies ++= Seq(
-      lagomScaladslTestKit
+      lagomScaladslTestKit,
       macwire,
       scalaTest
     )
